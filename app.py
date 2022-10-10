@@ -22,9 +22,9 @@ SHOW_DIALOG_str = str(SHOW_DIALOG_bool).lower()
 
 @app.route('/',methods=['GET'])
 def you_got_me():
-    target = os.environ.get('TARGET', 'World')
-    return 'Hello {}!\n'.format(target)
-
+    #target = os.environ.get('TARGET', 'World')
+    #return 'Hello {}!\n'.format(target)
+    return 'HELLO, IS IT ME YOU/'' RE LOOKING FOR?'
 #if we receive a message POST from slack
 
 @app.route('/slack',methods=['POST'])
